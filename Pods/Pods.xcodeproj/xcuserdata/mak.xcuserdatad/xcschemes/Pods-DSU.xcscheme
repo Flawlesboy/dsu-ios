@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "244ECE701DCD2E6F00BB1AF3"
-               BuildableName = "DSU.app"
-               BlueprintName = "DSU"
-               ReferencedContainer = "container:DSU.xcodeproj">
+               BlueprintIdentifier = "3DC716D28D565AA345B9984C2330F2D2"
+               BuildableName = "Pods_DSU.framework"
+               BlueprintName = "Pods-DSU"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "244ECE701DCD2E6F00BB1AF3"
-            BuildableName = "DSU.app"
-            BlueprintName = "DSU"
-            ReferencedContainer = "container:DSU.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "244ECE701DCD2E6F00BB1AF3"
-            BuildableName = "DSU.app"
-            BlueprintName = "DSU"
-            ReferencedContainer = "container:DSU.xcodeproj">
+            BlueprintIdentifier = "3DC716D28D565AA345B9984C2330F2D2"
+            BuildableName = "Pods_DSU.framework"
+            BlueprintName = "Pods-DSU"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_MODE"
-            value = "disable"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "244ECE701DCD2E6F00BB1AF3"
-            BuildableName = "DSU.app"
-            BlueprintName = "DSU"
-            ReferencedContainer = "container:DSU.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
