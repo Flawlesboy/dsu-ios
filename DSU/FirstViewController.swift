@@ -11,21 +11,70 @@ import Alamofire
 import Fuzi
 
 class FirstViewController: UIViewController, UITableViewDataSource {
+    class New {
+        let title: String
+        let previewImageURL: String
+        let url: String
+        
+        init(title: String, previewImageURL: String, url: String) {
+            
+            self.title = title
+            self.previewImageURL = previewImageURL
+            self.url = url
+            
+        }
+            
+        
+    }
     
-    var News = ["sdf", "sdfs"]
+    @IBOutlet weak var tableview: UITableView!
+    
+    var News: Array<String> = []
+    
+    
 
     override func viewDidLoad() {
+        tableview.dataSource = self
         super.viewDidLoad()
+        
+        
         Alamofire.request("http://dgu.ru/", method: .get).responseString { response in
             
             let html = response.data
             
             do {
                 let doc = try HTMLDocument(data: html!)
-                print(doc.root?.children(tag: "body"))
+                
+                let new = doc.root!.firstChild(xpath: "//body/div/div/div/div/div/div/div/div/table/tr/td")!
+                
+            //body/div/div/div/div/div/div/div/div/table/tr/td
+                
+              let title = new.firstChild(xpath: "div/a")!["title"]
+                
+              let previewImageURL = new.firstChild(xpath: "div/p/image")!["scr"]
+                
+              let url = new.firstChild(xpath: "div/a")!["href"]
+                
+                print(title)
+                print(previewImageURL)
+                print(url)
+              
+
+                
+                self.tableview.reloadData()
+               
             } catch {
                 print(error)
+                print("New array is \(self.News)")
+                
+                
+                
+                
             }
+            
+            
+        
+           
         }
         
         
@@ -41,6 +90,10 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell") as! NewsCell
         
+        //cell.textLabel?.text = self.News[indexPath.row]
+        //var newws = News[indexPath.row]
+        cell.NewsLabel.text = self.News[indexPath.row]
+        //cell.imageView?.image = self.
         return cell
     }
     
