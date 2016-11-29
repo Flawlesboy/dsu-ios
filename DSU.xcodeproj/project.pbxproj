@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151F11FC1DED75B10085AEC6 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151F11FB1DED75B10085AEC6 /* New.swift */; };
 		2404CDA11DD138C200729B1B /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2404CDA01DD138C200729B1B /* NewsCell.swift */; };
 		244ECE751DCD2E6F00BB1AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244ECE741DCD2E6F00BB1AF3 /* AppDelegate.swift */; };
 		244ECE771DCD2E6F00BB1AF3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244ECE761DCD2E6F00BB1AF3 /* FirstViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151F11FB1DED75B10085AEC6 /* New.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		2404CDA01DD138C200729B1B /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		244ECE711DCD2E6F00BB1AF3 /* DSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244ECE741DCD2E6F00BB1AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,8 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				244ECE741DCD2E6F00BB1AF3 /* AppDelegate.swift */,
-				2404CDA01DD138C200729B1B /* NewsCell.swift */,
 				244ECE761DCD2E6F00BB1AF3 /* FirstViewController.swift */,
+				151F11FB1DED75B10085AEC6 /* New.swift */,
+				2404CDA01DD138C200729B1B /* NewsCell.swift */,
 				244ECE781DCD2E6F00BB1AF3 /* SecondViewController.swift */,
 				244ECE7A1DCD2E6F00BB1AF3 /* Main.storyboard */,
 				244ECE7D1DCD2E7000BB1AF3 /* Assets.xcassets */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				244ECE791DCD2E6F00BB1AF3 /* SecondViewController.swift in Sources */,
+				151F11FC1DED75B10085AEC6 /* New.swift in Sources */,
 				244ECE751DCD2E6F00BB1AF3 /* AppDelegate.swift in Sources */,
 				2404CDA11DD138C200729B1B /* NewsCell.swift in Sources */,
 				244ECE771DCD2E6F00BB1AF3 /* FirstViewController.swift in Sources */,

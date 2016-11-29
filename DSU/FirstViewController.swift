@@ -11,25 +11,11 @@ import Alamofire
 import Fuzi
 
 class FirstViewController: UIViewController, UITableViewDataSource {
-    class New {
-        let title: String
-        let previewImageURL: String
-        let url: String
-        
-        init(title: String, previewImageURL: String, url: String) {
-            
-            self.title = title
-            self.previewImageURL = previewImageURL
-            self.url = url
-            
-        }
-            
-        
-    }
+
     
     @IBOutlet weak var tableview: UITableView!
     
-    var News: Array<String> = []
+    var news = [New]()
     
     
 
@@ -45,36 +31,28 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             do {
                 let doc = try HTMLDocument(data: html!)
                 
-                let new = doc.root!.firstChild(xpath: "//body/div/div/div/div/div/div/div/div/table/tr/td")!
+                let newsArray = doc.root!.firstChild(xpath: "//body/div/div/div/div/div/div/div/div/table/tr/td")!
                 
-            //body/div/div/div/div/div/div/div/div/table/tr/td
-                
-              let title = new.firstChild(xpath: "div/a")!["title"]
-                
-              let previewImageURL = new.firstChild(xpath: "div/p/image")!["scr"]
-                
-              let url = new.firstChild(xpath: "div/a")!["href"]
-                
-                print(title)
-                print(previewImageURL)
-                print(url)
-              
-
+                for news in newsArray.children {
+                    let title = news.firstChild(xpath: "div/a")!["title"]!
+                    
+                    let hostURL: String = "http://dgu.ru"
+                    
+                    let previewImageURL = hostURL + news.firstChild(xpath: "div")!.children(tag: "div")[1].firstChild(xpath: "p/img")!["src"]!
+                    
+                    let url = hostURL + news.firstChild(xpath: "div/a")!["href"]!
+                    
+                    let new = New(title: title, previewImageURL: previewImageURL, url: url)
+                    
+                    self.news.append(new)
+                }
                 
                 self.tableview.reloadData()
                
             } catch {
                 print(error)
-                print("New array is \(self.News)")
-                
-                
-                
-                
             }
             
-            
-        
-           
         }
         
         
@@ -83,7 +61,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return News.count
+        return news.count
     }
     
     
@@ -92,7 +70,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         
         //cell.textLabel?.text = self.News[indexPath.row]
         //var newws = News[indexPath.row]
-        cell.NewsLabel.text = self.News[indexPath.row]
+        cell.NewsLabel.text = self.news[indexPath.row].title
         //cell.imageView?.image = self.
         return cell
     }
