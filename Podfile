@@ -7,6 +7,7 @@ target 'DSU' do
 
   pod 'Alamofire'
  pod 'Fuzi', '~> 1.0.0'
+pod 'SDWebImage', '~>3.8'
 
   # Pods for DSU
 

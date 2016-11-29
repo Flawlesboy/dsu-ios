@@ -1,15 +1,20 @@
 PODS:
   - Alamofire (4.0.1)
   - Fuzi (1.0.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - Alamofire
   - Fuzi (~> 1.0.0)
+  - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   Fuzi: 851403654bac55675aaeed815d0c8a1d3e3d3e8b
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 46de99234bc69377c873a71737672c46f4546657
+PODFILE CHECKSUM: 339618123a59481ecbe1dfa1bdb47e28289b4a55
 
 COCOAPODS: 1.0.1

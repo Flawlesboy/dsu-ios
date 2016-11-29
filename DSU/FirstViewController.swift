@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import Fuzi
+import SDWebImage
 
 class FirstViewController: UIViewController, UITableViewDataSource {
 
@@ -68,10 +69,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell") as! NewsCell
         
-        //cell.textLabel?.text = self.News[indexPath.row]
-        //var newws = News[indexPath.row]
-        cell.NewsLabel.text = self.news[indexPath.row].title
-        //cell.imageView?.image = self.
+        cell.newsLabel.text = self.news[indexPath.row].title
+        cell.newsImageView.sd_setImage(with: URL(string: self.news[indexPath.row].previewImageURL))
+        
         return cell
     }
     
