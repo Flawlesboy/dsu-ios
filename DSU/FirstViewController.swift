@@ -1,4 +1,3 @@
-//
 //  FirstViewController.swift
 //  DSU
 //
@@ -19,6 +18,17 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     var news = [New]()
     
     
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailNews" {
+            let vc = segue.destination as! DetailNewsViewController
+            vc.new = news[tableView.indexPathForSelectedRow]
+            
+            
+        }
+    }
 
     override func viewDidLoad() {
         tableview.dataSource = self
@@ -81,4 +91,9 @@ class FirstViewController: UIViewController, UITableViewDataSource {
  
 
 }
+
+
+
+
+
 

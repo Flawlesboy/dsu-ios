@@ -15,6 +15,7 @@
 		244ECE7C1DCD2E6F00BB1AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244ECE7A1DCD2E6F00BB1AF3 /* Main.storyboard */; };
 		244ECE7E1DCD2E7000BB1AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244ECE7D1DCD2E7000BB1AF3 /* Assets.xcassets */; };
 		244ECE811DCD2E7000BB1AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244ECE7F1DCD2E7000BB1AF3 /* LaunchScreen.storyboard */; };
+		245B7F881DFF4EFE00209F9F /* DetailNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245B7F871DFF4EFE00209F9F /* DetailNewsViewController.swift */; };
 		510E4DC453EE34FA95E9DAD4 /* Pods_DSU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D0802519643AB2AF742384A /* Pods_DSU.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		244ECE7D1DCD2E7000BB1AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244ECE801DCD2E7000BB1AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		244ECE821DCD2E7000BB1AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245B7F871DFF4EFE00209F9F /* DetailNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNewsViewController.swift; sourceTree = "<group>"; };
 		3509C558AAB028926FC38C9E /* Pods-DSU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DSU/Pods-DSU.debug.xcconfig"; sourceTree = "<group>"; };
 		7ADE08A9A4B5B063AC7ABE22 /* Pods-DSU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSU.release.xcconfig"; path = "Pods/Target Support Files/Pods-DSU/Pods-DSU.release.xcconfig"; sourceTree = "<group>"; };
 		7D0802519643AB2AF742384A /* Pods_DSU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 				151F11FB1DED75B10085AEC6 /* New.swift */,
 				2404CDA01DD138C200729B1B /* NewsCell.swift */,
 				244ECE781DCD2E6F00BB1AF3 /* SecondViewController.swift */,
+				245B7F871DFF4EFE00209F9F /* DetailNewsViewController.swift */,
 				244ECE7A1DCD2E6F00BB1AF3 /* Main.storyboard */,
 				244ECE7D1DCD2E7000BB1AF3 /* Assets.xcassets */,
 				244ECE7F1DCD2E7000BB1AF3 /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 				151F11FC1DED75B10085AEC6 /* New.swift in Sources */,
 				244ECE751DCD2E6F00BB1AF3 /* AppDelegate.swift in Sources */,
 				2404CDA11DD138C200729B1B /* NewsCell.swift in Sources */,
+				245B7F881DFF4EFE00209F9F /* DetailNewsViewController.swift in Sources */,
 				244ECE771DCD2E6F00BB1AF3 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,6 +61,7 @@
                                             <outlet property="NewsLabel" destination="kqJ-0u-jE2" id="pd6-bo-6u1"/>
                                             <outlet property="newsImageView" destination="Btn-PW-sQq" id="7ZE-JA-rHn"/>
                                             <outlet property="newsLabel" destination="kqJ-0u-jE2" id="Y3R-ZW-kvl"/>
+                                            <segue destination="QPf-BP-QQR" kind="show" identifier="DetailNews" id="2kA-O9-jvw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -82,6 +83,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1855.2" y="-331.48425787106447"/>
+        </scene>
+        <!--Detail News View Controller-->
+        <scene sceneID="KaW-su-DgP">
+            <objects>
+                <viewController id="QPf-BP-QQR" customClass="DetailNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bu8-xa-rad"/>
+                        <viewControllerLayoutGuide type="bottom" id="02D-dI-Rpo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9JU-Rs-GuY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayh-dC-5kH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2713" y="-331"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
